@@ -1,0 +1,97 @@
+*{
+	margin:0;
+	padding: 0;
+}
+#wrapper
+{
+	width: 970px;
+	margin: 0 auto;
+	height: 700px;
+	position:relative;
+	padding-top: 120px;
+}
+
+.caja1
+{
+	width: 970px;
+	
+	background-color:red;
+	
+}
+
+.caja1a
+{
+	width: 200px;
+	height: 200px;
+	background-color:blue;
+
+}
+.caja1b
+{
+	width: 200px;
+	height: 200px;
+	background-color:yellow;
+	position: absolute;
+	bottom: 0px;
+	left:0px;
+
+}
+
+.caja1c
+{
+	width: 200px;
+	height: 200px;
+	background-color:green;
+
+}
+
+.item-nota
+{
+	width: 400px;
+	z-index: 30;
+	position: relative;
+
+}
+.titulo1
+{  font-size: 30px;
+  color: white;
+  position: absolute;
+  bottom: 0px;
+  background-color: rgba(50, 44, 44, 0.63);
+  font-family: 'Montserrat', sans-serif;
+  padding: 10px;
+
+
+}
+
+.link-redes
+{
+position: absolute;
+top:0px;
+right: 0px;	
+}
+.link-redes img
+{width: 50px;
+height: 50px;
+}
+
+.fixed-top
+{
+	width: 100%;
+	height:100px;
+	background-color:red;
+	position: fixed;
+	z-index: 50;
+	top: 0;
+	left: 0;
+}
+
+.prueba
+{
+	width: 500px;
+	height: 1000px;
+	background-color: green;
+	position:absolute;
+	z-index: 10;
+
+}

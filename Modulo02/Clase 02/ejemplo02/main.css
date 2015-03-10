@@ -1,0 +1,73 @@
+body {
+background-color: #ddd;
+font-family: Arial, sans-serif;
+font-size: 13px;
+line-height: 1.4;
+padding: 40px;
+}
+div {
+background-color: #fff;
+box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+display: inline-block;
+margin-right: 20px;
+padding-bottom: 30px;
+position: relative;
+width: 200px;
+}
+div h2 {
+text-shadow: 0 2px 1px rgba(0,0,0,0.2);
+color: white;
+font-size: 20px;
+padding: 26px 0 10px;
+text-align: center;
+text-transform: uppercase;
+font-weight: bold;
+border-bottom: 2px solid rgba(0,0,0,0.2);
+margin-bottom: 20px;
+}
+div h3 {
+font-size: 44px;
+text-align: center;
+}
+div h3 span {
+color: gray;
+font-size: 12px;
+display: inline-block;
+line-height: 1;
+margin-left: 4px;
+text-align: left;
+width: 50px;
+text-transform: uppercase;
+}
+div p {
+padding: 14px;
+}
+div a {
+background-color: #222;
+display: block;
+color: white;
+width: 60px;
+padding: 6px 14px 6px 0;
+position: absolute;
+bottom: 0;
+right: 0;
+text-align: right;
+text-decoration: none;
+}
+div a:hover {
+background-color: orange;
+color: black;
+width: 100px;
+}
+.bronze h2 {
+background-color: #b2867b;
+}
+.silver h2 {
+background-color: #a1a294;
+}
+.gold h2 {
+background-color: #f1e85b;
+}
+.platinum h2 {
+background-color: #bdd3de;
+}

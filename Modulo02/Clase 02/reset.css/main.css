@@ -1,0 +1,28 @@
+body
+{
+	background:url('textura.png') ;
+	/* background-repeat: repeat-x;*/
+	 
+}
+#wrapper
+{
+	width: 970px;
+	margin: 0 auto;
+}
+
+#principal
+{
+	background:url('fondo.jpg') no-repeat;
+	
+	width: 970px;
+	height: 550px;
+	background-size: 100%;
+	
+	text-align: center;padding-top:28px;
+}
+
+#principal h1 {
+	color: black;
+	font-size:40px;
+
+}

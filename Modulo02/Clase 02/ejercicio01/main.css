@@ -1,0 +1,17 @@
+#wrapper
+{
+	width:970px;
+	margin:0 auto;
+	background-color:indigo;
+	margin-top:80px;
+	padding: 60px;
+	box-sizing:border-box;
+}
+h1{color:white;
+text-transform: uppercase;}
+p{color:yellow;font-size: 26px}
+
+.caja1
+{width: 400px;display:inline-block;height:300px;margin:5px;background-color:yellow;}
+.caja2
+{width:700px;margin:0 auto;height: 30px;background-color:red; }
