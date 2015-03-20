@@ -1,0 +1,46 @@
+#wrapper{
+	width: 970px;
+	margin: 0 auto;
+	
+	background-color:gray;
+	text-align: center
+
+}
+.caja1{display: inline-block;vertical-align: top;width: 300px;height: 200px;background-color:blue;margin: 10px}
+.caja2{display: inline-block;vertical-align: top;width: 300px;height: 200px;background-color:blue;margin: 10px}
+.caja3{width: 970px;height: 200px;background-color:yellow;display: inline-block}
+
+.caja4{width: 300px;height: 200px;background-color:green;margin: 10px;float:left;}
+.caja5{width: 300px;height: 200px;background-color:green;margin: 10px;float:left;}
+
+.clear{clear: both}
+
+@media screen and (min-width: 0px) and (max-width: 970px){
+.caja3{width: 95%;}
+}
+
+@media screen and (min-width: 0px) and (max-width: 320px){
+
+
+#wrapper{
+	width: 100%;
+
+
+	background-color:skyblue;
+}
+
+}
+
+
+@media screen and (min-width: 321px) and (max-width: 970px){
+
+#wrapper{
+	width: 100%;
+
+
+	background-color:skyblue;
+}
+
+
+
+}

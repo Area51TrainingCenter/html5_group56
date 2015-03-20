@@ -1,0 +1,115 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing:border-box;
+}
+body
+{font-family: 'Montserrat', sans-serif;}
+#wrapper
+{
+	width: 970px;
+	margin:0 auto;
+	padding-top: 80px;
+}
+
+.nav-fixed
+{position: fixed;
+left: 0px;
+top: 0px;
+width: 100%;
+background-color: black}
+
+.nav-fixed nav
+{width: 970px;
+margin: 0 auto;}
+
+
+.menu-principal li{
+	display: inline-block;
+	padding: 25px;
+	border-bottom: 5px solid black;
+	color:white;
+  background-color: black;
+	transition:all 0.3s linear;
+
+}
+
+.menu-principal li:hover
+{
+
+	border-bottom: 5px solid orange;
+	color:white;
+  background-color: green;
+  cursor: pointer;
+ 
+}
+
+
+.noticia{width: 300px;
+display: inline-block;
+vertical-align: top;
+margin: 5px;
+border-radius: 5px;
+border: 1px solid gray;
+	transition:all 0.3s linear;
+}
+
+.noticia:hover{
+box-shadow: 5px 5px 5px gray;	
+}
+
+.noticia:hover h2
+{ 
+	color: rgb(0, 0, 0);
+
+  text-shadow: 1px 1px 1px rgb(31, 19, 19);
+}
+
+
+.img-noticia{
+	width: 100%;
+}
+
+.noticia h2{
+	padding: 10px;
+	font-size: 20px;
+	transition:all 0.15s linear;
+}
+
+
+.img-circulo
+{
+	width: 300px;
+	border-radius: 50%;
+	
+	margin: 5px;
+	transition:all 0.2s linear;
+
+}
+
+.img-circulo:hover
+{
+	border: 10px solid red;
+}
+
+.img-circulo2
+{
+	width: 300px;
+	border-radius: 50%;
+	opacity: 0;
+	margin: 5px;
+	transition:all 1s linear;
+
+}
+
+.img-circulo2:hover
+{
+	
+	opacity: 1;
+
+	transition:all 0.2s linear;
+
+}
+
+
+
