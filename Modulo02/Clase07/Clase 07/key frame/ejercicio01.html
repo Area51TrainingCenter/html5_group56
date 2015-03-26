@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="es">
+	<head>
+	<meta charset="utf-8">
+	<title>pagina con keyframe</title>
+	</head>
+	
+	<body>
+	<div class="caja"></div>
+	
+	</body>	
+</html>
+<style>
+.caja
+{
+	width: 300px;
+	height: 300px;
+	background-color:skyblue;
+	position:relative;
+	 -webkit-animation: diagonal 3s infinite; /* Chrome, Safari, Opera */ 
+    animation: diagonal 3s infinite;
+}
+
+@-webkit-keyframes diagonal {
+ 			0%   {top: 0px;left: 0px;}
+  	50% {top: 300px;left:300px;background-color: red;width: 100px;height: 100px;}
+    100% {top: 0px;left:0px;	background-color:skyblue;width: 300px;height: 300px;}
+}
+@-moz-keyframes diagonal {
+   	0%   {top: 0px;left: 0px;}
+  	50% {top: 300px;left:300px;background-color: red;width: 100px;height: 100px;}
+    100% {top: 0px;left:0px;	background-color:skyblue;width: 300px;height: 300px;}
+}
+
+
+
+
+
+
+/* Standard syntax */
+@keyframes vertical {
+    0%   {top: 0px;}
+
+    100% {top: 100px;}
+}
+
+
+</style>

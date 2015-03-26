@@ -1,0 +1,65 @@
+@font-face{
+  font-family: 'LubalinGraphStdDemi';
+  src: url('fonts/lubalin_graph_std_demi.eot');
+  src: url('fonts/lubalin_graph_std_demi.eot?#iefix') format('embedded-opentype'),
+       url('fonts/lubalin_graph_std_demi.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'LubalinGraphStdBook';
+  src: url('fonts/lubalin_graph_std_book.eot');
+  src: url('fonts/lubalin_graph_std_book.eot?#iefix') format('embedded-opentype'),
+       url('fonts/lubalin_graph_std_book.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'TrebuchetRegular';
+  src: url('fonts/trebuchet_regular.eot');
+  src: url('fonts/trebuchet_regular.eot?#iefix') format('embedded-opentype'),
+       url('fonts/trebuchet_regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'groboldregular';
+    src: url('fonts/GROBOLD-webfont.eot');
+    src: url('fonts/GROBOLD-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/GROBOLD-webfont.woff2') format('woff2'),
+         url('fonts/GROBOLD-webfont.woff') format('woff'),
+         url('fonts/GROBOLD-webfont.ttf') format('truetype'),
+         url('fonts/GROBOLD-webfont.svg#groboldregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.titulo
+{
+     font-family: 'groboldregular';
+}
+
+.titulo2
+{
+     font-family: 'LubalinGraphStdDemi';
+}
+
+.titulo3
+{
+     font-family: 'LubalinGraphStdBook';
+}
+
+.titulo4
+{
+     font-family: 'TrebuchetRegular';
+}
+
+.titulo5
+{
+  font-family: 'Rock Salt', cursive;
+}

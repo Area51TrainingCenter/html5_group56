@@ -1,0 +1,36 @@
+MÁS EFECTOS CSS
+
+La propiedad CSS transform permite generar efectos gráficos que antes no era posible generar con CSS, como efecto de rotación, escalado completo, escalado horizontal, escalado vertical, sesgado horizontal o vertical y traslación horizontal o vertical de elementos.
+
+css
+ 
+
+PROPIEDAD TRANSFORM
+
+Esta propiedad puede no ser reconocida por los navegadores antiguos o requerir del uso de prefijos específicos para algunos navegadores actuales.
+
+PROPIEDAD CSS transform
+Función de la propiedad	Permite rotar, escalar, sesgar o trasladar elementos.
+Valor por defecto	none
+Aplicable a	Elementos transformables (tipo block o equivalente).
+Valores posibles para esta propiedad	
+none (indica que no hay transformación)
+
+rotate (udAng) (donde udAng es una unidad angular válida en CSS)
+
+scale (valorX) ó scale (valorX, valorY) ó scaleX(valorX) ó scaleY(valorY) (donde la especificación X fuerza el escalado en horizontal y la especificación Y lo fuerza en vertical, siendo ambas números enteros o decimales)
+
+skewX (udAng) ó skewY(udAnd) (donde udAng es una unidad angular válida en CSS. Se establece un sesgado del elemento en horizontal o en vertical)
+
+translate (valorX) ó translate (valorX, valorY) ó translateX(valorX) ó translateY(valorY) (donde la especificación X fuerza la traslación en horizontal y la especificación Y lo fuerza en vertical, siendo ambas unidades de medida válidas admitiéndose porcentajes)
+
+inherit (se heredan las características del elemento padre).
+Ejemplos aprenderaprogramar.com	.myContainer { transform: skewX(-30deg);}
+.myContainerSP { transform: scale(0.5);}
+ 
+
+ 
+
+Esta propiedad permite generar efectos muy vistosos cuando se aprovecha para combinarla con hover, por ejemplo: #contentBox1:hover { transform:  skewX(-20deg);} da lugar a que el efecto se produzca cuando el usuario pase el ratón por encima del elemento afectado, y mientras esto no ocurre el elemento se muestra como esté definido para una situación normal. Este tipo de efectos anteriormente no se podían generar con CSS y era necesario hacerlo mediante imágenes previamente preparadas con un programa de diseño gráfico, con Javascript u otras técnicas.
+
+http://css-tricks.com/almanac/properties/t/transform/

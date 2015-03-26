@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#vertical {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position :relative;
+    -webkit-animation: vertical 5s infinite; /* Chrome, Safari, Opera */ 
+    animation: vertical 5s infinite;
+}
+
+#horizontal {
+    width: 100px;
+    height: 100px;
+    background: blue;
+    position :relative;
+    -webkit-animation: horizontal 5s infinite; /* Chrome, Safari, Opera */ 
+    animation: horizontal 5s infinite;
+}
+
+
+
+/* Chrome, Safari, Opera */ 
+@-webkit-keyframes vertical {
+    0%   {top: 0px;}
+    25%  {top: 200px;}
+    50%  {top: 50px;}
+    75%  {top: 150px}
+    100% {top: 0px;}
+}
+
+/* Standard syntax */
+@keyframes vertical {
+    0%   {top: 0px;}
+    25%  {top: 200px;}
+    50%  {top: 50px;}
+    75%  {top: 150px}
+    100% {top: 0px;}
+}
+
+
+@-webkit-keyframes horizontal {
+    0%   {left: 0px;}
+    25%  {left: 200px;}
+    75%  {left: 50px}
+    100% {left: 100px;}
+}
+
+/* Standard syntax */
+@keyframes horizontal {
+    0%   {left: 0px;}
+    25%  {left: 200px;}
+    75%  {left: 50px}
+    100% {left: 100px;}
+}
+
+
+
+
+</style>
+</head>
+<body>
+
+<p><strong>Note:</strong> The @keyframes rule is not supported in Internet Explorer 9 and earlier versions.</p>
+
+<div id="vertical"></div>
+<div id="horizontal"></div>
+
+</body>
+</html>

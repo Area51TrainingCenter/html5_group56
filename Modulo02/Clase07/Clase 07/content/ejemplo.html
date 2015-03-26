@@ -1,0 +1,164 @@
+<!doctype  html>
+<html>
+	<head>
+	<meta  charset="utf-8">
+	</head>
+	<body>
+		<div>
+			<h1 class="titulo">Introduccion</h1>
+
+			<h2 >seccion</h2>
+				<h2 >seccion</h2>
+			<h1 class="titulo">Un nuevo despertar</h1>
+
+			<h2 >seccion</h2>
+				<h2 >seccion</h2>
+
+			<h1 class="titulo">Un nuevo despertar</h1>
+					<h2 >seccion</h2>
+				<h2 >seccion</h2>
+		</div>
+	
+
+		<div>
+			<p>Praesent eu ante nec urna maximus tempor. Vestibulum suscipit, eros eget semper tristique, justo massa ullamcorper metus, ac pharetra lectus leo vitae tellus. Duis in leo ut arcu pretium mattis eu sed erat.
+			</p>
+			<p>Praesent eu ante nec urna maximus tempor. Vestibulum suscipit, eros eget semper tristique, justo massa ullamcorper metus, ac pharetra lectus leo vitae tellus. Duis in leo ut arcu pretium mattis eu sed erat.
+			</p>
+				<p class="nota">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempor viverra nibh vel ultrices. Integer ac est vitae leo interdum pharetra. Vestibulum at nulla ut felis ornare dapibus eget eget eros. Phasellus consequat massa ut dictum hendrerit. Vivamus posuere placerat lobortis. 
+			</p>
+
+			<p id="ultimo"> Aliquam ut bibendum lorem. Donec ornare nibh vel risus mattis imperdiet. Nulla at tristique mi, non porttitor enim. Nullam sed massa eu mi rutrum dapibus et lacinia neque. </p>
+		</div>
+
+		<div>
+		<blockquote>
+			Aliquam ut bibendum lorem. Donec ornare nibh vel risus mattis imperdiet.
+		</blockquote>
+		</div>
+
+
+		<div>
+			
+			<span class="especial">este es el icono de internet explorer</span>
+		</div>
+
+		<div>
+		<h2>Ejemplo 05 </h2>	
+				<a class="link1" href="www.google.com"></a>
+				<a class="link2" title="este es un link que te llevara a google"></a>
+		</div>
+
+
+	</body>
+	
+</html>
+<style>
+
+
+
+/** la popiedad content soporta
+texto
+imagenes
+blockquote
+attr
+contadores
+
+/** ejemplo 1 **/
+/** agregando  texto **/
+/*
+.titulo:before{
+  content: "Titulo : ";
+}
+
+.titulo:after{
+  content: " ; ";
+}
+
+/** ejemplo 02 **/
+/** agregando  texto **/
+p.nota:before {
+  content: "Indicacion: ";
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: underline;
+  color: red;
+
+}
+
+
+/**ejemplo 03 **/
+/** agregando  comillas **/
+/**Otros valores que se pueden indicar en la propiedad content son open-quote, close-quote, no-open-quote y no-close-quote. Los dos primeros indican que se debe mostar una comilla de apertura o de cierre respectivamente. Las comillas utilizadas se establecen mediante la propiedad quotes:
+
+blockquote { quotes: "«" "»" '"' '"' }
+blockquote:before {
+  content: open-quote;
+}
+blockquote:after {
+  content: close-quote;
+}
+
+
+*/
+blockquote:before {
+  content: open-quote;
+}
+blockquote:after {
+  content: close-quote;
+}
+
+blockquote {
+  quotes: "**" "**";
+}
+
+
+/** ejemplo 04 **/
+/** agregando comillas **/
+p:before {
+  content: "Contenido generado \"dinámicamente\" mediante CSS. ";
+}
+#ultimo:after {
+  content: " Fin de los 'contenidos' de la página.";
+}
+
+
+span.especial:after {
+  content:url("http://www.w3schools.com/images/compatible_ie.gif");
+}
+
+span.especial:before {
+  content:url("http://www.w3schools.com/images/compatible_ie.gif");
+}
+
+/** ejemplo 05**/
+
+a.link1:after {
+  content: " (" attr(href) ")";
+}
+
+a.link2:after {
+  content: " (" attr(title) ")";
+}
+
+
+/** ejemplo 06 **/ 
+/*** contadores **/
+
+body {
+  counter-reset: capitulo;
+}
+h1 {
+  counter-reset: seccion;
+}
+h1:before {
+  content: "Capítulo " counter(capitulo) ". ";
+  counter-increment: capitulo;
+}
+h2:before {
+  content: counter(capitulo) "." counter(seccion) " ";
+  counter-increment: seccion;
+}
+
+
+</style>
