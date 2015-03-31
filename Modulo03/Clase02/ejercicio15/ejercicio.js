@@ -1,0 +1,17 @@
+var NUMERO_A = 20;
+var NUMERO_B = 15;
+
+var RESULTADO = NUMERO_A + NUMERO_B;
+console.log(RESULTADO);
+
+NUMERO_A = 18;
+NUMERO_B = 12;
+
+RESULTADO = NUMERO_A + NUMERO_B;
+console.log(RESULTADO);
+
+NUMERO_A = 5;
+NUMERO_B = 150;
+
+RESULTADO = NUMERO_A + NUMERO_B;
+console.log(RESULTADO);
