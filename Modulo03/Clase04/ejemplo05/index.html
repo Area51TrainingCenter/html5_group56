@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <style type="text/css">
+            .color-container{
+
+                width: 250px;
+
+            } 
+            span{
+                display:block;
+                float:left;
+                width: 20px;
+                height: 20px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <script type="text/javascript">
+
+            //declarando array para los colores
+            var lista = new Array();
+
+            //imprimiendo contenedor para los colores
+            document.write('<div class="color-container">');
+
+            //haciendo un bucle para seleccionar 100 colores
+            for (var i = 0; i < 100; i++) {
+
+                var hex = "#" + Math.random().toString(16).slice(2, 8);
+
+                lista.push(new Array('color', hex));
+
+                document.write('<span style="background-color:' + hex + ';"></span>');
+
+            }
+
+            document.write('</div>');
+
+        </script>
+
+
+
+    </body>
+</html>

@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+
+<head>
+<title>Mi Primera pagina con Jquery</title>
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="../reset.css">
+<script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="main2.js"></script>
+</head>
+<body>
+<header>
+	<nav>
+		<ul class="menu">
+			<a href=""><li>Incio</li></a>
+			<a href=""><li>Listar</li></a>
+			<a href=""><li>Indicaciones</li></a>
+			
+		</ul>
+	</nav>
+</header>
+
+	<div class="wrapper">
+
+
+		<div class="pelicula">
+			<img class="principal" src="400x400.jpg">
+			<p class="descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis turpis cursus nunc tincidunt fringilla. Maecenas faucibus ligula ornare erat pellentesque, eget elementum nisi fermentum. Curabitur porta lectus sed ligula sodales scelerisque. Nam interdum ullamcorper volutpat. Pellentesque non quam at quam accumsan tempor vitae non mauris. Etiam consectetur commodo dapibus. Nam tellus ante, pretium sed odio eu, euismod aliquam ipsum. Curabitur vel condimentum augue. In a dui feugiat, placerat purus et, scelerisque metus. Proin posuere, metus non varius aliquam, lacus nibh lacinia metus, et placerat neque sapien ac arcu. Fusce fringilla leo et metus scelerisque tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus ut urna aliquet nulla vestibulum vulputate non non ipsum. Morbi odio justo, finibus vitae nunc nec, varius iaculis urna. Quisque a lectus vitae ex mattis placerat et sed quam. Sed dignissim neque et est imperdiet, ut posuere augue malesuada. </p>
+
+		</div>
+		<section>
+			<ul class="opciones">
+				<li data-titulo="Asu Mare">ASU MARE 2</li>
+				<li data-titulo="Rapdios y Furiosos">RAPIDOS Y FURIOSOS 2</li>
+				<li data-titulo="La Casa del Mal">LA CASA DEL MAL</li>
+				<li data-titulo="The Avengers">THE AVENGERS</li>
+			</ul>
+
+		</section>
+
+
+	</div>
+</body>
+
+</html>
+<style>
+
+body{
+	font-family: "Roboto",sans-serif;
+}
+.wrapper{
+	width: 970px;
+	margin: 0 auto;
+}
+header{
+	background-color: skyblue;
+}
+nav{
+	width: 970px;
+	margin: 0 auto;
+}
+.menu li
+{
+display: inline-block;
+padding: 10px 15px;
+font-family: "Roboto",sans-serif;
+color: #FFF;
+font-size: 20px;
+text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.11);
+}
+
+.pelicula
+{
+	margin-top: 20px;
+}
+
+.opciones li{
+
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.11);
+    margin: 10px 5px;
+    padding: 10px;
+    background-color: rgba(128, 128, 128, 0.05);
+
+
+}
+.descripcion{
+	width: 480px;
+	display: inline-block;
+	vertical-align: top;
+	padding: 20px;
+	font-size: 18px;
+}
+
+.active
+{
+	background-color: rgba(128, 128, 128, 0.7)!important;
+}
+</style>

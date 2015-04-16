@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+
+        <script type="text/javascript">
+            var datos = new Array(
+                    new Array("titulo", "resumennfdfdjkff", 23),
+                    new Array("nombre2", "apellido", 23),
+                    new Array("nombre3", "apellido", 23),
+                    new Array("nombre4", "apellido", 23),
+                    new Array("nombre5", "apellido", 23),
+                    new Array("nombre6", "apellido", 23),
+                    new Array("nombre7", "apellido", 23),
+                    new Array("nombre8", "apellido", 23),
+                    new Array("nombre9", "apellido", 23),
+                    new Array("nombre10", "apellido", 23)
+                    );
+
+            document.write("<table>");
+            document.write("<tr><td>Nombre</td><td>Apellido</td><td>Edad</td></tr>");
+            for (var i = 0; i < datos.length; i++) {
+                document.write("<tr>");
+                for (var x = 0; x < datos[i].length; x++) {
+                    document.write("<td>");
+                    document.write('<input type="text" value="' + datos[i][x] + '" name="text[' + i + '][' + x + ']" />');
+                    document.write("</td>");
+                }
+                document.write("</tr>");
+            }
+
+            document.write("</table>");
+
+        </script>
+
+
+    </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Seguimos conociendo JavaScript</title>
+	<script src="main.js"></script>
+</head>
+<body>
+	<h1>Clase 2</h1>
+	<form method="post" name="prueba" id="frmPrueba">
+		<p><label for="txtNombre">Nombre</label>
+			<input type="text" name="nombre" id="txtNombre" placeholder="Pon tu nombre" /></p>
+		<p><label for="txtEdad">Edad</label>
+			<input type="number" name="edad" id="txtEdad" placeholder="Edad" /></p>
+		<p><label for="cbFecNac">Fecha de nacimiento</label>
+			<select name="dia" id="cbDia">
+				<script>
+					listarDias();
+				</script>
+			</select>
+			<select name="mes">
+				<script>
+					listarMeses();
+				</script>
+			</select>
+			<select name="dia">
+				<script>
+					listarAnios();
+				</script>
+			</select>
+		</p>
+		<p><label for="txtComentario">Comentario</label>
+			<textarea name="comentario" onKeyDown="return validarCaracteres()"
+	onKeyPress="return validarCaracteres()"></textarea>
+<!-- 
+	 onKeyDown="dimeLetra()" -->
+			<span id="caracteres"></span></p>
+		<p><button type="submit">Enviar</button></p>
+	</form>
+	<div id="mensaje"></div>
+
+</body>
+</html>

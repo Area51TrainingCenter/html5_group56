@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+
+<head>
+<title>Mi Primera pagina con Jquery</title>
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="../reset.css">
+<script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+<header>
+	<nav>
+		<ul class="menu">
+			<a href=""><li>Incio</li></a>
+			<a href=""><li>Listar</li></a>
+			<a href=""><li>Indicaciones</li></a>
+			
+		</ul>
+	</nav>
+</header>
+	<div class="wrapper">
+			<form class="form-registro">
+				<fieldset>
+					<label>Nombre</label>
+					<input type="text" name="nombre" id="inpNombre">
+				</fieldset>
+				<fieldset>
+					<label>Apellido</label>
+					<input type="text" name="apellido" id="inpApellido">
+				</fieldset>
+				<fieldset>
+					<label>Telefono</label>
+					<input type="text" name="telefono" id="inpTelefono">
+				</fieldset>
+				<fieldset>
+					<label>Correo</label>
+					<input type="text" name="correo" id="inpCorreo">
+				</fieldset>
+			</form>
+
+			<div class="opciones">
+				
+					<div><span id="agregar" class="item-opcion">Agregar</span></div>
+					<div><span id="limpiar" class="item-opcion">Limpiar</span></div>
+			</div>
+			<div class="clear"></div>
+
+			<seccion>
+			<br>
+			<br>
+				<h1>Lista de Contacto</h1>
+				<div class="list-contacto">
+					
+				</div>
+
+
+			</seccion>
+
+
+	</div>
+</body>
+
+</html>
+
+<style>
+body{
+	font-family: "Roboto",sans-serif;
+}
+.wrapper{
+	width: 970px;
+	margin: 0 auto;
+}
+header{
+	background-color: skyblue;
+}
+nav{
+	width: 970px;
+	margin: 0 auto;
+}
+.menu li
+{
+display: inline-block;
+padding: 10px 15px;
+font-family: "Roboto",sans-serif;
+color: #FFF;
+font-size: 20px;
+text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.11);
+}
+form fieldset{
+	width: 600px;
+	
+	padding: 10px 0px;
+}
+form fieldset label
+{
+	width: 30%;
+	display: inline-block;
+	text-align: right;
+	padding-right: 5px;
+}
+
+.opciones{
+	width: 300px;
+	float: left;
+}
+.form-registro{
+	width: 670px;
+	float: left;
+}
+.clear{clear: both;}
+
+.item-opcion
+{
+	display: inline-block;
+	background-color:green;
+	padding: 15px;
+	border-radius: 10px;
+	color:white;
+	margin:15px 0px;
+
+}
+
+
+.item-agenda
+{
+	display: inline-block;
+	width: 220px;
+	vertical-align: top;
+	margin: 15px 10px;
+
+}
+.item-agenda p
+{
+	margin: 10px 0px;
+}
+
+</style>
