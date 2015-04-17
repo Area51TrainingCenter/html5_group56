@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../reset.css">
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+<meta charset="utf-8">
+</head>
+<body>
+	<div class="wrapper">
+		
+			<div class="content-opciones">
+				<div class="opcion" data-color="rojo"></div>
+				<div class="opcion" data-color="verde"></div>
+				<div class="opcion" data-color="azul"></div>
+			</div>
+
+			<section id="noticias">
+				
+				<article class="news">
+					<img src="300x250.gif">
+					<h2>Dakar 2016: ¿Cómo se protegerá el patrimonio?</h2>
+				</article>
+
+				<article class="news">
+					<img src="300x250.gif">
+					<h2>Dakar 2016: ¿Cómo se protegerá el patrimonio?</h2>
+				</article>
+
+				<article class="news">
+					<img src="300x250.gif">
+					<h2>Dakar 2016: ¿Cómo se protegerá el patrimonio?</h2>
+				</article>
+
+				<article class="news">
+					<img src="300x250.gif">
+					<h2>Dakar 2016: ¿Cómo se protegerá el patrimonio?</h2>
+				</article>
+
+				<article class="news">
+					<img src="300x250.gif">
+					<h2>Dakar 2016: ¿Cómo se protegerá el patrimonio?</h2>
+				</article>
+
+				<article class="news">
+					<img src="300x250.gif">
+					<h2>Dakar 2016: ¿Cómo se protegerá el patrimonio?</h2>
+				</article>
+				
+
+			</section>
+
+
+
+	</div>
+
+</body>
+</html>
+
+<style>
+.wrapper{
+	width: 970px;
+	margin: 0 auto;
+}
+.content-opciones{
+	text-align: center;
+}
+
+.opcion{
+	width: 200px;
+	height: 200px;
+	background-color:gray;
+	border-radius: 50%;
+	display: inline-block;
+	vertical-align: top;
+	margin: 40px;
+	opacity: 0.5;
+	transition: all 0.2s linear;
+	/*transition:all 1s lienar;*/
+	 /*-webkit-transition: width 2s; /* Safari */
+    /*transition: width 2s;*/
+}
+
+.actvio
+{
+	border: 5px solid black;
+	opacity: 1;
+}
+
+
+.news{
+	width: 300px;
+	
+	
+	display: inline-block;
+	text-align: left;
+	margin: 50px 10px;
+	position: relative;
+	
+}
+.news h2{
+	font-size: 18px;
+	padding: 10px;
+	position: absolute;
+	bottom: 0px;
+	background-color:black;
+	color:white;
+	font-family: 'Roboto', sans-serif;
+	transition: all 0.2s linear;
+}
+
+#noticias
+{
+	text-align: center;
+}
+
+.rojo{background-color:rgba(240, 0, 0, 0.81)!important;}
+.verde{background-color:rgba(12, 111, 12, 0.85) !important;}
+.azul{background-color:rgba(7, 7, 159, 0.68) !important;}
+</style>
+<script>
+$(document).ready(function(){
+
+	$(".opcion").click(function(){
+		$(".opcion").removeClass("actvio");
+		$(this).addClass("actvio");
+		/*$(".opcion").data( "color" );*/
+		$(".news h2").removeClass();
+		/*$(".news h2").removeClass("verde");
+		$(".news h2").removeClass("azul");*/
+		
+		$(".news h2").addClass($(this).data( "color" ));
+		
+	})
+})
+</script>

@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+</head>
+<body>
+<h1> probando el scroll</h1>
+</body>
+</html>
+<style>
+h1{
+	height: 1000px;
+	background-color: red;
+}
+</style>
+<script type="text/javascript">
+
+
+$(function() {
+
+$(document).scroll(function() {
+	
+console.log($(document).scrollTop());
+	if ($(document).scrollTop()>550) {
+	
+		
+	}
+});
+
+  })
+
+
+</script>
