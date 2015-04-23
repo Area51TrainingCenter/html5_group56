@@ -1,0 +1,53 @@
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<div>
+	<div id="opciones">
+		<a id="noticias" >NOTICIAS</a>
+		<a id="luces" >LUCES</a>
+		<a id="deportes" >DEPORTES</a>
+
+
+		<div id="resultados">
+		</div>
+	</div>
+
+</div>
+
+<style>
+#opciones
+{
+	width: 600px;
+	margin:0 auto;
+	padding-top:50px;
+}
+
+#opciones a{background-color:blue;padding: 20px;margin: 20px;color:white;text-decoration: none}
+#opciones a:hover{text-decoration: none}
+
+</style>
+
+<script type="text/javascript">
+$(document).on("ready",main);
+
+ function cargarData(url)
+{
+	$('#resultados').text('cargando la informacion');
+	$('#resultados').load(url);
+}
+
+function main()
+{
+	$('#noticias').on("click",function(){
+		cargarData('noticias.html')
+	});
+	$('#deportes').on("click",function(){
+			cargarData('deportes.html')
+	});
+	$('#luces').on("click",function(){
+			cargarData('luces.html')
+	});
+
+
+}
+/*posemos pasar archivos php asp html, podemos pasarle parametros y la funciton de succes */
+</script>
+

@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+	<head>
+		<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+	</head>
+	<body>
+		<pre id="json">
+		</pre>
+	</body>
+</html>
+<script type="text/javascript">
+$.getJSON('http://api.openweathermap.org/data/2.5/weather?q=lima',function(data)
+	{
+		console.log("la ciudad es : "+data.name);
+		console.log("la latitud es de : "+data.coord['lat']);
+		//console.log("la longitud es de : "data.coord['lon']);
+	});
+</script>

@@ -1,0 +1,35 @@
+<!DOCTYPE  html>
+<html>
+<head>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<section id="tests">
+		<h1>Tutorial JSON (JavaScript Object Notation)</h1>
+		<div id="content" >
+
+		</div>
+	</section>
+	<script type="text/javascript">
+
+	var objetos = {"Personas":[
+			{"nombre":"Jorge","edad":23},
+			{"nombre":"Carlos","edad":17}
+		]};
+
+	document.getElementById('content').innerHTML = objetos.Personas[1].nombre ;
+	/*Declarar un objeto JSON con una funcion en un atributo
+	 notese el uso de "this" que hace referencia a el objeto en sí, es decir a persona*/
+	var persona = {"name":"Jorge","edad":23,
+				  "avisar":function(){alert("Hola soy "+this.name);}
+				 };
+
+	persona.avisar();
+
+	console.log(objetos);
+
+	</script>
+</body>	
+</html>
+
+<!-- ejmplo http://garabatoslinux.net/ejemplo-de-ajax-con-jquery-que-retorna-un-objeto-json.html-->
