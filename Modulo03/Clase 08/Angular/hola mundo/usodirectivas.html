@@ -1,0 +1,32 @@
+<div ng-app ng-init="pensamientos = [];">
+    <h1>Altavoz AngularJS</h1>
+    <p>
+        ¿Qué hay de nuevo?
+        <br />
+        <input type="text" ng-model="nuevoPensamiento" /> 
+        <input type="button" value="Agregar" ng-click="pensamientos.push(nuevoPensamiento); nuevoPensamiento = '';" />
+    </p>
+    <h2>Pensamientos que has tenido</h2>
+    <p ng-repeat="pensamiento in pensamientos" ng-init="paso = $index">
+        Pensaste esto: {{pensamiento}} (Iteración con índice {{paso}})
+    </p>
+
+     <p>
+        ¿buscar pensamiento?
+        <br />
+        <input type="text" ng-model="indice" /> 
+        <input type="button" value="buscar" ng-click="busqueda=pensamientos[indice]; " />
+        {{ busqueda }}
+    </p>
+
+
+
+
+
+
+</div>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
+
+
+<!--
+  El dato del array "pensamientos" lo generas en el scope con el ng-init de la primera etiqueta. En el campo de texto tenemos la directiva ng-model para indicarle que lo que se escriba formará parte de nuestro modelo y se almacenará en la variable nuevoPensamiento. Como ves, en el ng-click se hace un push de ese nuevo pensamiento dentro del array de pensamientos. En ng-repeat se itera sobre la colección de pensamientos, escribiéndolos todos por pantalla, junto con el índice de ese pensamiento actual en el array "pensamientos". -->

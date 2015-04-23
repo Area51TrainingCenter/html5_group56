@@ -1,0 +1,39 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+    <meta charset="UTF-8">
+    <title>Ej Hola Mundo desarrollado en AngularJS</title>
+</head>
+<body>
+ <div ng-app>
+  <input type="text" ng-model="dato" />
+  {{dato}}
+  <input type="button" value="hola" ng-click="dato='hizo click'" />
+</div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
+</body>
+</html>
+
+
+
+<!--
+
+    Un campo de texto con ng-model="dato". En ese campo tenemos un "doble binding".
+    Una expresión {{dato}} donde se mostrará aquello que haya escrito en el campo de texto. En este caso tenemos un binding simple, de un único sentido.
+    finalmente tienes un botón que no tiene bindig alguno. Simplemente, cuando lo pulses, estás ejecutando una expresión (con ng-click) para cambiar el scope en su variable "dato". 
+
+    -->
+
+<!--    Directiva ngModel (ng-model)
+
+La directiva ngModel informa al compilador HTML de AngularJS que que estás declarando una variable de tu modelo. Las puedes usar dentro de campos INPUT, SELECT, TEXTAREA (o controles de formulario personalizados).
+
+Nota: De nuevo, cabe decir que no forma parte del estándar HTML sino que es una extensión que tenemos gracias a AngularJS.
+
+La indicas con el atributo del HTML ng-model, asignando el nombre de la variable de tu modelo que estás declarando. 
+
+-->

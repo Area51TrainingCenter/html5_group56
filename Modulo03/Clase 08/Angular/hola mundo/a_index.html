@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+    <meta charset="UTF-8">
+    <title>Ej Hola Mundo desarrollado en AngularJS</title>
+</head>
+<body>
+    <h1>Hola {{nombre}}</h1>
+        <form>
+            ¿Cómo te llamas? <input type="text" ng-model="nombre">
+        </form>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
+</body>
+</html>
+
+<!-- 
+// la directiva ng-app en la etiqueta que englobe la aplicación (nos sirve para poder indicarnos en que ambito se desarrolladra angular )
+
+
+ Ese ng-model es otra directiva que nos dice que ese campo de texto forma parte de nuestro modelo y el valor "nombre" es la referencia con la que se conocerá a este dato
+
+
+ Directiva ngApp (ng-app)
+
+Esta es la marca que indica el elemento raíz de tu aplicación. Se coloca como atributo en la etiqueta que deseas que sea la raíz. Es una directiva que autoarranca la aplicación web AngularJS. Se leería "Enyi ap" y lo más común es ponerlo al principio de tu documento HTML, en la etiqueta HTML o BODY, pero también lo podrías colocar en un área más restringida dentro del documento en otra de las etiquetas de tu página.
+
+<html ng-app>
+
+Nota: Como puedes comprobar, ng-app es una directiva y se indica como si fuera un atributo el HTML. Pero no lo es ningún atributo real de HTML. Si usas un validador de HTML te advertirá que ese atributo es inexistente y se interpretará por un error de validación. Para solucionar este posible inconveniente, la práctica aconsejable es colocar el prefijo "data-" a cada directiva.
+
+<html data-ng-app>
+
+
+
+
+Expresiones
+
+Con las expresiones también enriquecemos el HTML, ya que nos permiten colocar cualquier cosa y que AngularJS se encargue de interpretarla y resolverla. Para crear una expresión simplemente la englobas dentro de dobles llaves, de inicio y fin.
+
+Ahora dentro de tu aplicación, en cualquier lugar de tu código HTML delimitado por la etiqueta donde pusiste la directiva ng-app eres capaz de colocar expresiones. En Angular podemos una gama de tipos de expresiones, de momento hagamos una prueba colocando una expresión así.
+
+<h1>{{ 1 + 1}}</h1>
+
+
+ Otro detalle interesante de las expresiones es la capacidad de formatear la salida, por ejemplo, diciendo que lo que se va a escribir es un número y que deben representarse dos decimales necesariamente. Vemos rápidamente la sintaxis de esta salida formateada, y más adelante la utilizaremos en diversos ejemplos:
+
+{{ precio | number:2 }}
+
+Cabe decir que estas expresiones no están pensadas para escribir código de tu programa, osea, lo que llamamos lógica de tu aplicación. Como decíamos, están sobre todo pensadas para volcar información que tengas en tu modelo y facilitar el "binding". Por ello, salvo el operador ternario (x ? y : z), no se pueden colocar expresiones de control como bucles o condicionales. Sin embargo, desde las expresiones también podemos llamar a funciones codificadas en Javascript (que están escritas en los controladores, como veremos enseguida) para poder resolver cualquier tipo de necesidad más compleja. 

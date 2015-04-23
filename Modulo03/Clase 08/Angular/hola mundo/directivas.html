@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+    <meta charset="UTF-8">
+    <title>Ej Hola Mundo desarrollado en AngularJS</title>
+</head>
+<body ng-init="miArrayDatos = ['primero','segundo','tercero'];">
+    	<!--<h1>Hola {{nombre}}</h1>
+        <form>
+            ¿Cómo te llamas? <input type="text" ng-model="nombre">
+        </form>-->
+        <ul ng-repeat="elemento in miArrayDatos" ng-init="paso=$index;">
+		<li>Elemento con id {{paso}}: <span>{{elemento}}</span></li>
+		</ul>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
+</body>
+</html>
+
+
+
+<!--
+
+Con esto consigues que tu aplicación inicialice en el scope un dato llamado miArrayDatos como un array vacío. Pero no le prestes demasiada atención al hecho de haber colocado la directiva ngInit dentro de la misma etiqueta que inicializa la aplicación, pues podría ir en cualquier otra etiqueta de tu HTML. Realmente, colocarla en esa división marcada con ngApp es considerado una mala práctica. 
+
+
+
+Directiva ngRepeat
+
+Esta directiva te sirve para implementar una repetición (un bucle). Es usada para repetir un grupo de etiquetas una serie de veces. Al implementar la directiva en tu HTML tienes que decirle sobre qué estructura se va a iterar. ngRepeat se usa de manera muy habitual y se verá con detenimiento en decenas de ejemplos. De momento puedes quedarte que es como un recorrido for-each en el que se itera sobre cada uno de los elementos de una colección. 
+-->
